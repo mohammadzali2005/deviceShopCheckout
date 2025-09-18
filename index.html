@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern and user-friendly checkout page for Device Shop, designed to make purchasing your favorite devices quick, secure, and hassle-free.">
+    <title> Device Shop Checkout </title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="title"> Checkout <span> 3 ITEMS </span> </h1>
+    <div class="container">
+        <div class="list">
+            <div class="products">
+                <div class="product1 product">
+                    <img src="./Images/Gold.png" alt="product1" class="productImg">
+                    <table>
+                        <tr>
+                            <th> iPhone 12 Pro </th>
+                            <th> $999.00 </th>  
+                        </tr>
+                        <tr>
+                            <td> Golden </td>
+                        </tr>
+                        <tr>
+                            <td> X 1 </td>
+                            <td> X </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product2 product">
+                    <img src="./Images/Apple-watch.png" alt="product1" class="productImg">
+                    <table>
+                        <tr>
+                            <th> Apple Watch </th>
+                            <th> $399.00 </th>  
+                        </tr>
+                        <tr>
+                            <td> Blue </td>
+                        </tr>
+                        <tr>
+                            <td> X 1 </td>
+                            <td> X </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product3 product">
+                    <img src="./Images/iMac.png" alt="product1" class="productImg">
+                    <table>
+                        <tr>
+                            <th> iMac </th>
+                            <th> $1199.00 </th>  
+                        </tr>
+                        <tr>
+                            <td> Green </td>
+                        </tr>
+                        <tr>
+                            <td> X 1 </td>
+                            <td> X </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <div class="coupon">
+                <input type="text" class="couponInput" placeholder="Enter coupon code">
+                <button class="couponBtn"> Apply Coupon </button>
+            </div> 
+            <br />
+            <table class="total">
+                <tr>
+                    <td> Sub total </td>
+                    <td> $2597.00 </td>
+                </tr>
+                <tr>
+                    <td> Tax </td>
+                    <td> $623.28 </td>
+                </tr>
+                <tr>
+                    <td> Total </td>
+                    <td> $3220.28 </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact">
+            <h3 class="contactTitle"> Contact Information</h3>
+
+            <label for="nameInput" class="name"> First & Last name</label>
+            <input type="text" class="nameInput" id="nameInput" placeholder="Enter first & last name">
+
+            <label for="email" class="email"> Email Address </label>
+            <input type="email" class="emailInput" id="email" placeholder="Enter email address">
+            <div class="cp">
+                <label for="country" class="country"> Country </label>
+                <label for="postalcode" class="postalcode"> Postal Code </label>
+            </div>
+
+            <div class="cpSelection">
+                <select id="country">
+                    <option value="Finland">Finland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="USA">USA</option>
+                    <option value="Iran">Iran</option>
+                </select>
+                <input type="number" class="postalcodeInput" id="postalcode" placeholder="00270">
+            </div>
+
+            <button class="continueBtn"> Continue </button>
+        </div> 
+    </div>
+</body>
+</html>

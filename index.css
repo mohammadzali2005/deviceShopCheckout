@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --desktop-fontSize: 16px;
+    --mobile-fontSize: 14px;
+}
+
+/* forl all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+    font-size: var(--desktop-fontSize);
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(./Images/background-image.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* top section of the page */
+.title{
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    float: left;
+    font-size: 24px;
+}
+
+.title span{
+    background-color: rgba(0,0,0,.5);
+    font-size: var(--desktop-fontSize);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.container{
+    width: 90%;
+    min-height: 75%;
+    display: flex;
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 15px;
+}
+
+/* left section of the page for listing the products */
+/* listing the products */
+.list{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 30px;
+    background-color: #E5E7EB;
+}
+
+.products{
+    width: 100%;
+    height: 66%;
+    border-bottom: 1px solid rgb(172, 171, 171);
+}
+
+.product{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.productImg{
+    background-color: #F3F4F6;
+    height: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 171, 171);  
+}
+
+.product1 .productImg{
+    padding: 10px 25px;
+}
+
+.product2 .productImg{
+    padding: 15px 30px;
+}
+
+.product3 .productImg{
+    padding: 10px 5px;
+}
+
+.product table{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.product table tr{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.product table tr:first-child th{
+    font-size: var(--desktop-fontSize);
+    font-weight: 600;
+}
+
+.product table tr:last-child{
+    height: 65px;
+}
+
+.product table tr:last-child td{
+    font-size: var(--desktop-fontSize);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* coupon section */
+.coupon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.couponInput{
+    width: 72%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: var(--desktop-fontSize);
+    background-color: #fff;
+}
+
+.couponBtn{
+    background-color: #1D1D1F;
+    color: white;
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--desktop-fontSize);
+    font-weight: 600;
+    transition: color .3s, background-color .3s, border .3s;
+    padding: 5px;
+}
+
+.couponBtn:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #1D1D1F;
+    border: 1px solid #1D1D1F;
+}
+
+/* total section for calculating the total prices */
+.total{
+    width: 100%;
+    height: 15%;
+    border-collapse: collapse;
+}
+
+.total tr{
+    margin: 15px 0;
+}
+
+.total td{
+    width: 50%;
+    text-align: center; 
+    font-size: var(--desktop-fontSize);
+    font-weight: 600;
+}
+
+.total tr td:first-child{
+    text-align: left;
+}
+
+.total tr td:last-child{
+    text-align: right;
+}
+
+.total tr:not(tr:last-child) td{
+    color: #394150;
+}
+
+.total tr:last-child td{
+    color: #1D1D1F;
+}
+
+/* right side of the page for getting informations of the user for connection */
+.contact{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.contactTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.name, .email{
+    font-size: var(--desktop-fontSize);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.nameInput, .emailInput{
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: var(--desktop-fontSize);
+    margin-bottom: 25px;
+    background-color: #E5E7EB;
+}
+
+.cp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.country, .postalcode{
+    font-size: var(--desktop-fontSize);
+    font-weight: 500;
+    width: 50%;
+}
+
+.cpSelection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#country, .postalcodeInput{
+    width: 45%;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: var(--desktop-fontSize);
+    background-color: #E5E7EB;
+}
+
+.postalcodeInput{
+    width: 50%;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: var(--desktop-fontSize);
+    background-color: #E5E7EB;
+}
+
+.continueBtn{
+    background-color: #1D1D1F;
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--desktop-fontSize);
+    font-weight: 600;
+    margin-top: 30px;
+    transition: color .3s, background-color .3s, border .3s;
+}
+
+.continueBtn:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #1D1D1F;
+    border: 1px solid #1D1D1F;
+}
+
+@media (max-width: 1250px){
+    .couponBtn{
+        font-size: var(--mobile-fontSize);
+    }
+}
+
+@media (max-width: 900px){
+    .product table td, .product table th{
+        font-size: var(--mobile-fontSize);
+    }
+
+    .total td{
+        font-size: var(--mobile-fontSize);
+    }
+
+    .name, .email, .country, .postalcode, .nameInput, .emailInput, #country, .postalcodeInput, .continueBtn{
+        font-size: var(--mobile-fontSize);
+    }
+}
+
+@media (max-width: 850px){
+    body{
+        background-image: url(./Images/background-image@2x.png);
+        background-size: contain;
+        padding: 5px 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .list{
+        width: 100%;
+        height: 50%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .product1 .productImg{
+        padding: 10px 30px;
+    }
+
+    .product2 .productImg{
+        padding: 15px 35px;
+    }
+
+    .product3 .productImg{
+        padding: 10px 10px;
+    }
+
+    .contact{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .title{
+        margin-top: 40px;
+    }
+
+    
+}
